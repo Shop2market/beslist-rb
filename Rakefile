@@ -15,10 +15,10 @@ require 'jeweler'
 Jeweler::Tasks.new do |gem|
   # gem is a Gem::Specification... see http://guides.rubygems.org/specification-reference/ for more options
   gem.name = "beslist"
-  gem.homepage = "http://github.com/Funfun/beslist"
+  gem.homepage = "http://github.com/Shop2market/beslist"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.summary = %Q{A Ruby client for the Beslist API.}
+  gem.description = %Q{A Ruby client for the Beslist API.}
   gem.email = "nsu1team@gmail.com"
   gem.authors = ["Tsyren Ochirov"]
   # dependencies defined in Gemfile
