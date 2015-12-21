@@ -12,7 +12,7 @@ Gem::Specification.new do |s|
   s.require_paths = ["lib"]
   s.authors = ["Tsyren Ochirov"]
   s.date = "2015-12-21"
-  s.description = "A Ruby client for the Beslist API"
+  s.description = "TODO: longer description of your gem"
   s.email = "nsu1team@gmail.com"
   s.extra_rdoc_files = [
     "LICENSE.txt",
@@ -27,6 +27,7 @@ Gem::Specification.new do |s|
     "README.rdoc",
     "Rakefile",
     "VERSION",
+    "beslist.gemspec",
     "lib/beslist.rb",
     "spec/beslist_spec.rb",
     "spec/spec_helper.rb"
@@ -60,3 +61,4 @@ Gem::Specification.new do |s|
     s.add_dependency(%q<simplecov>, [">= 0"])
   end
 end
+
