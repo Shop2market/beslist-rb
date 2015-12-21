@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<shoppingCart>
+  <summary>
+    <numResults>2</numResults>
+    <options>
+      <shopID>666666</shopID>
+      <dateFrom>2014-12-31</dateFrom>
+      <dateTo>2015-01-01</dateTo>
+    </options>
+  </summary>
+  <shopOrders>
+    <shopOrder>
+      <orderNumber numeric="143650002">BVB555555555</orderNumber>
+      <shopOrderNumber/>
+      <b2b>0</b2b>
+      <dateCreated>2014-12-31 09:32:38</dateCreated>
+      <price>12.00</price>
+      <shipping>1.95</shipping>
+      <transactionCosts>0.50</transactionCosts>
+      <commission>1.68</commission>
+      <numProducts>1</numProducts>
+      <payment>
+        <method>iDEAL</method>
+        <iban>NL63ABNA0555555555</iban>
+        <bic>ABNANL2A</bic>
+        <consumer_name>T DE TESTER</consumer_name>
+        <status>Success</status>
+      </payment>
+      <conditions>
+        <id>153</id>
+        <date>2014-05-09 14:24:34</date>
+        <url><![CDATA[https://www.beslist.nl/shoppingcart/conditions.php?shop=666666&amp;version=666]]></url>
+      </conditions>
+      <products>
+        <product>
+          <price>12.00</price>
+          <shipping>1.95</shipping>
+          <numberOrdered>1</numberOrdered>
+          <bvbCode>5555555</bvbCode>
+          <size></size>
+          <color/>
+          <title>Samsung Accu Galaxy S2 en S2 plus EB-F1A2GBU i9100 Galaxy S2, i9105 Galaxy S2 Plus EB-F1A2GBU,EB-F1A2GBUCSTD voor i9100 Galaxy S2, i9105 Galaxy S2 Plus</title>
+          <url>https://www.testshoptest.com/producten/accus/samsung-accu-galaxy-s2-en-s2-plus-eb-f1a2gbu-5555555</url>
+          <commission>
+            <percentage>14.00</percentage>
+            <fixed>0.00</fixed>
+            <variable>1.68</variable>
+            <total>1.68</total>
+          </commission>
+        </product>
+      </products>
+      <customer>
+        <id>555555</id>
+        <email>testvoornaam.testachternaam@mail.com</email>
+        <emailOptIn>0</emailOptIn>
+        <phone>5555555555</phone>
+      </customer>
+      <addresses>
+        <shipping>
+          <firstName>Testvoornaam</firstName>
+          <lastNameInsertion>de</lastNameInsertion>
+          <lastName>Testachternaam</lastName>
+          <address>Teststraat</address>
+          <addressNumber>55</addressNumber>
+          <addressNumberAdditional>A</addressNumberAdditional>
+          <city>Testplaats</city>
+          <zip>5555ZZ</zip>
+          <country></country>
+          <sex>m</sex>
+        </shipping>
+        <invoice>
+          <firstName>Testvoornaam</firstName>
+          <lastNameInsertion>de</lastNameInsertion>
+          <lastName>Testachternaam</lastName>
+          <address>Teststraat</address>
+          <addressNumber>66</addressNumber>
+          <addressNumberAdditional></addressNumberAdditional>
+          <city>Testplaats</city>
+          <zip>6666ZZ</zip>
+          <country></country>
+          <sex>m</sex>
+        </invoice>
+      </addresses>
+    </shopOrder>
+    <shopOrder>
+      <orderNumber numeric="143650005">BVB666666666</orderNumber>
+      <shopOrderNumber/>
+      <b2b>0</b2b>
+      <dateCreated>2014-12-31 10:54:34</dateCreated>
+      <price>16.95</price>
+      <shipping>1.95</shipping>
+      <transactionCosts>0.50</transactionCosts>
+      <commission>2.37</commission>
+      <numProducts>1</numProducts>
+      <payment>
+        <method>iDEAL</method>
+        <iban>NL87RABO5555555555</iban>
+        <bic>RABONL2U</bic>
+        <consumer_name>T DE TESTER2</consumer_name>
+        <status>Success</status>
+      </payment>
+      <conditions>
+        <id>153</id>
+        <date>2014-05-09 14:24:34</date>
+        <url><![CDATA[https://www.beslist.nl/shoppingcart/conditions.php?shop=666666&amp;version=666]]></url>
+      </conditions>
+      <products>
+        <product>
+          <price>16.95</price>
+          <shipping>1.95</shipping>
+          <numberOrdered>1</numberOrdered>
+          <bvbCode>6666666</bvbCode>
+          <size></size>
+          <color>7.7 inch</color>
+          <title>Samsung Galaxy Xcover 2 Ultra Slim Flip Cover (Black) S7710 Galaxy Xcover 2 qM-USFC-SM-S7710-B voor S7710 Galaxy Xcover 2</title>
+          <url>https://www.testshoptest.com/producten/hoesjes-en-cases/samsung-galaxy-xcover-2-ultra-slim-flip-cover-black-6666666</url>
+          <commission>
+            <percentage>14.00</percentage>
+            <fixed>0.00</fixed>
+            <variable>2.37</variable>
+            <total>2.37</total>
+          </commission>
+        </product>
+      </products>
+      <customer>
+        <id>168305</id>
+        <email>testvoornaam2.testachternaam2@mail.com</email>
+        <emailOptIn>0</emailOptIn>
+        <phone>6666666666</phone>
+      </customer>
+      <addresses>
+        <shipping>
+          <firstName>Testvoornaam2</firstName>
+          <lastNameInsertion>de</lastNameInsertion>
+          <lastName>Testschternaam2</lastName>
+          <address><![CDATA[Test &#039;t Testerje]]></address>
+          <addressNumber>55</addressNumber>
+          <addressNumberAdditional></addressNumberAdditional>
+          <city>Testplaats2</city>
+          <zip>5555 ZZ</zip>
+          <country></country>
+          <sex>m</sex>
+        </shipping>
+        <invoice>
+          <firstName>Testvoornaam2</firstName>
+          <lastNameInsertion>de</lastNameInsertion>
+          <lastName>Testschternaam2</lastName>
+          <address><![CDATA[Test &#039;t Testerje]]></address>
+          <addressNumber>55</addressNumber>
+          <addressNumberAdditional></addressNumberAdditional>
+          <city>Testplaats2</city>
+          <zip>6666 ZZ</zip>
+          <country></country>
+          <sex>m</sex>
+        </invoice>
+      </addresses>
+    </shopOrder>
+  </shopOrders>
+</shoppingCart>

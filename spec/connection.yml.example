@@ -1,0 +1,4 @@
+personal_key: # Personal key
+client_id:    # Client id
+shop_id:      # Beslist Shop Id
+mode:         # 'sandbox' or 'production'
