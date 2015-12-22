@@ -16,18 +16,10 @@ module Beslist
       end
 
       def interface
-        @interface ||= begin
-          params = {
-            client_id: @connection.options[:client_id],
-            shop_id: @connection.options[:shop_id]
-          }
-          params.merge!(output_type: 'test', test_orders: '1') if Beslist::API::Config.mode == 'sandbox'
-
-          Faraday.new(url: Beslist::API::Config.endpoint, headers: {'Content-Type' => 'application/xml'}, params: params) do |faraday|
-            faraday.request  :url_encoded             # form-encode POST params
-            faraday.response :logger                  # log requests to STDOUT
-            faraday.adapter  :httpclient              # make requests with HttpClient
-          end
+        @interface ||= Faraday.new(url: Beslist::API::Config.endpoint, headers: {'Content-Type' => 'application/xml'}) do |faraday|
+          faraday.request  :url_encoded             # form-encode POST params
+          faraday.response :logger                  # log requests to STDOUT
+          faraday.adapter  :httpclient              # make requests with HttpClient
         end
       end
 
