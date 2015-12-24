@@ -7,7 +7,8 @@ module Beslist
 
       def initialize(options = {})
         @connection = Beslist::API::Connection.new( :client_id => options[:client_id],
-                                                    :shop_id   => options[:shop_id])
+                                                    :shop_id   => options[:shop_id],
+                                                    :personal_key => options[:personal_key])
       end
 
       def orders(options)

@@ -24,7 +24,7 @@ module Beslist
       end
 
       def checksum(*dynamic_parts)
-        base = Beslist::API::Config.personal_key+options[:client_id]+options[:shop_id]
+        base = options[:personal_key]+options[:client_id]+options[:shop_id]
         Digest::MD5.hexdigest(base+dynamic_parts.join(''))
       end
 
