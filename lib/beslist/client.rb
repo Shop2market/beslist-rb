@@ -24,7 +24,7 @@ module Beslist
 
             req.params.merge!(date_from: date_from) if date_from
             req.params.merge!(date_to: date_to) if date_to
-            req.params.merge!(output_type: 'test', test_orders: '1') if Beslist::API::Config.mode == 'sandbox'
+            req.params.merge!(output_type: 'test', test_orders: '250') if Beslist::API::Config.mode == 'sandbox'
           end
         end
 
