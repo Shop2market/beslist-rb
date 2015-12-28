@@ -11,7 +11,7 @@ Gem::Specification.new do |s|
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.require_paths = ["lib"]
   s.authors = ["Tsyren Ochirov"]
-  s.date = "2015-12-24"
+  s.date = "2015-12-28"
   s.description = "A Ruby client for the Beslist API."
   s.email = "nsu1team@gmail.com"
   s.extra_rdoc_files = [
