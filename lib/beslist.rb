@@ -8,5 +8,6 @@ end
 
 require "beslist/error"
 require "beslist/util/config"
+require "beslist/util/params_encoder"
 require "beslist/connection"
 require "beslist/client"
