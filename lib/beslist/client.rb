@@ -26,7 +26,7 @@ module Beslist
             req.params.merge!(date_to: date_to) if date_to
             if Beslist::API::Config.mode == 'sandbox'
               req.options.params_encoder = Beslist::ParamsEncoder
-              req.params.merge!(output_type: 'test', test_orders: '250')
+              req.params.merge!(output_type: 'test', test_orders: '1')
               req.params.merge!(test_products: options[:test_products]) unless options[:test_products].nil?
             end
           end
