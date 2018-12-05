@@ -34,7 +34,7 @@ describe Beslist::API::Client do
       it "raises a Beslist::API::Error" do
          expect do
           client.orders(date_from: Beslist::Spec.date_from, date_to: Beslist::Spec.date_to)
-        end.to raise_error(Beslist::API::Error, 'checksum is invalid')
+        end.to raise_error(Beslist::API::Error, 'Error received from Beslist: checksum is invalid')
        end
      end
    end

@@ -4,11 +4,14 @@ module Beslist
     class Client
 
       attr_accessor :connection
+      attr_reader :logger
 
+      # TODO: replace <options = {}> signature with: <connection, logger = nil>
       def initialize(options = {})
         @connection = Beslist::API::Connection.new( :client_id => options[:client_id],
                                                     :shop_id   => options[:shop_id],
                                                     :personal_key => options[:personal_key])
+        @logger = options[:logger]
       end
 
       def orders(options)
@@ -32,11 +35,35 @@ module Beslist
           end
         end
 
-        if response['shoppingCart']['summary'].keys.include?('errorMessage')
-          fail(Beslist::API::Error, response['shoppingCart']['summary']['errorMessage'])
-        end
+        check_for_error!(response)
 
         response
+      end
+
+      private
+
+      def loggable?
+        !!logger
+      end
+
+      def check_for_error!(response)
+        if cart = response['shoppingCart']
+          if summary = cart['summary']
+            if summary.keys.include?('errorMessage')
+              err_msg = "Error received from Beslist: #{summary['errorMessage']}"
+              logger.error(err_msg) if loggable?
+              fail(Beslist::API::Error, err_msg)
+            end
+          else
+            err_msg = "Beslist bad response! There is no `summary` inside: response['shoppingCart']\n\t-Response: #{response.inspect}"
+            logger.error(err_msg) if loggable?
+            fail(Beslist::API::Error, err_msg)
+          end
+        else
+          err_msg = "Beslist bad response! There is no `shoppingCart` inside: response\n\t-Response: #{response.inspect}"
+          logger.error(err_msg) if loggable?
+          fail(Beslist::API::Error, err_msg)
+        end
       end
     end
   end
